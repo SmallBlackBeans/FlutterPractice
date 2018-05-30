@@ -112,6 +112,8 @@ import 'const/strings.dart';
 import 'view/content_list.dart';
 import 'view/RandomWords.dart';
 import 'widget_demo/Container.dart';
+import 'widget_demo/shopping/product.dart';
+import 'widget_demo/shopping/shoppingList.dart';
 
 /* 
   Dart 应用是单线程的，但是 Dart 支持代码运行在其它线程上，同时也支持使用 async/await 模式让代码异步执行，而不会阻塞 UI 线程。
@@ -122,10 +124,21 @@ class AwesomeTips extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(primaryColor: Colors.yellow.shade800),
+        theme: ThemeData(
+            brightness: Brightness.dark,
+            primaryColor: Colors.yellow.shade800,
+            accentColor: Colors.cyan[600]),
         title: Strings.appTitle,
         // home: ContentList(),
         // home: ContainerWidget());
-        home: RandomWords());
+        // home: RandomWords());
+        home: ShoppingList(
+          products: <Product>[
+            Product(name: "鸡蛋"),
+            Product(name: "火腿"),
+            Product(name: "方便面")
+          ],
+        ));
   }
+  // }
 }
