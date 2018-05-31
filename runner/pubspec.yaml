@@ -12,6 +12,10 @@ dependencies:
   sqflite: any
   path_provider: any
   cached_network_image: "^0.4.1"
+  transparent_image: ^0.1.0
+  http: any
+  dio: any
+  web_socket_channel: any
 
 dev_dependencies:
   flutter_test:

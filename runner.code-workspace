@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "runner"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/path_provider",
+			"name": "path_provider"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/shared_preferences",
+			"name": "shared_preferences"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/sqflite",
+			"name": "sqflite"
+		}
+	],
+	"settings": {}
+}

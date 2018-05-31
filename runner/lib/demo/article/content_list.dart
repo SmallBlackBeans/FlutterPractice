@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../const/strings.dart';
+import 'package:runner/const/strings.dart';
 import 'package:http/http.dart';
 import 'dart:convert';
-import '../model/feed.dart';
+import 'feed.dart';
 
 class ContentList extends StatefulWidget {
   @override
