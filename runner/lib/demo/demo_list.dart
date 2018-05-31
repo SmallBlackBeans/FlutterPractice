@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'shopping/product.dart';
-import 'shopping/shoppingList.dart';
-import 'article/content_list.dart';
-import 'article/RandomWords.dart';
-import 'package:runner/widget/widget_demo.dart';
 
 class DemoListWidget extends StatelessWidget {
-  final List<String> items = ["widget demo", "实例"];
+  final List<String> items = [""];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -32,12 +27,10 @@ class DemoListWidget extends StatelessWidget {
     Widget page;
     switch (index) {
       case 0:
-        page = WidgetDemoPage();
-        break;
-      case 1:
         break;
       default:
     }
+
     Navigator.of(context).push(new MaterialPageRoute(builder: (context) {
       return page;
     }));

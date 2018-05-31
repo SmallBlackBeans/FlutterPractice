@@ -8,9 +8,26 @@ import 'todos_list.dart';
 import 'data_push_pop_first.dart';
 import 'PostList.dart';
 import 'webSocket_demo.dart';
+import 'shopping/product.dart';
+import 'shopping/shoppingList.dart';
+import 'article/RandomWords.dart';
+import 'article/content_list.dart';
 
 class WidgetDemoPage extends StatelessWidget {
-  final List<String> items = ["1", "2"];
+  final List<String> items = [
+    "图片加载",
+    "item 删除",
+    "Todos",
+    "页面跳转与传值",
+    "网络获取",
+    "GridList",
+    "多类型list",
+    "无限列表",
+    "文章列表",
+    "包裹容器",
+    "商品选择",
+    "webSocket 连接"
+  ];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -34,9 +51,47 @@ class WidgetDemoPage extends StatelessWidget {
     Widget page;
     switch (index) {
       case 0:
-        page = WidgetDemoPage();
+        page = ImageWidget();
         break;
       case 1:
+        page = DeleteItemList();
+        break;
+      case 2:
+        page = TodoList();
+        break;
+      case 3:
+        page = FirstPage();
+        break;
+      case 4:
+        page = PostPage();
+        break;
+      case 5:
+        page = GridListWidget();
+        break;
+      case 6:
+        page = ListMulti();
+        break;
+      case 7:
+        page = PostPage();
+        break;
+      case 8:
+        page = RandomWords();
+        break;
+      case 9:
+        page = ContentList();
+        break;
+      case 10:
+        page = ContainerWidget();
+        break;
+      case 11:
+        page = ShoppingList(products: <Product>[
+          Product(name: "鸡蛋"),
+          Product(name: "火腿"),
+          Product(name: "方便面")
+        ]);
+        break;
+      case 12:
+        page = WebSoketPage();
         break;
       default:
     }

@@ -13,15 +13,11 @@ class ProjectListWidget extends StatelessWidget {
       body: ListView.builder(
         itemCount: items.length,
         itemBuilder: (context, position) {
-          if (position.isOdd) {
-            return Divider();
-          }
-          final index = position ~/ 2;
           return ListTile(
-              title: Text(items[index]),
+              title: Text(items[position]),
               subtitle: null,
               onTap: () {
-                _pushPage(context, index);
+                _pushPage(context, position);
               });
         },
       ),

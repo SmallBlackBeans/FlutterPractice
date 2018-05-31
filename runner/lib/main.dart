@@ -16,36 +16,7 @@ class AwesomeTips extends StatelessWidget {
           primaryColor: Colors.yellow.shade800,
           accentColor: Colors.cyan[600]),
       title: Strings.appTitle,
-      // home: ContentList(),
-      //
-      // home: ContainerWidget(),
-      //
-      // home: RandomWords(),
-      //
-      // home: ShoppingList(
-      //   products: <Product>[
-      //     Product(name: "鸡蛋"),
-      //     Product(name: "火腿"),
-      //     Product(name: "方便面")
-      //   ],
-      // )，
-      //图片加载
-      // home: ImageWidget(),
-      //多条目列表
-      // home: ListMulti(),
-      //grid
-      // home: GridListWidget(),
-      //delete
-      // home: DeleteItemList(),
-      //导航
-      // home: TodoList(),
-      //数据回传
-      // home: FirstPage(),
-      //网络获取
-      // home: PostPage(),
-      //webSocket
       home: ProjectListWidget(),
-      //
     );
   }
   // }
