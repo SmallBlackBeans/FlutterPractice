@@ -32,6 +32,7 @@ class ImageWidget extends StatelessWidget {
           //cache
 
           CachedNetworkImage(
+            alignment: Alignment.center,
             placeholder: CircularProgressIndicator(),
             imageUrl:
                 'https://github.com/flutter/website/blob/master/_includes/code/layout/lakes/images/lake.jpg?raw=true',
