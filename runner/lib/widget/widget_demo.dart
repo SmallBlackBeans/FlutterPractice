@@ -72,25 +72,22 @@ class WidgetDemoPage extends StatelessWidget {
         page = ListMulti();
         break;
       case 7:
-        page = PostPage();
-        break;
-      case 8:
         page = RandomWords();
         break;
-      case 9:
+      case 8:
         page = ContentList();
         break;
-      case 10:
+      case 9:
         page = ContainerWidget();
         break;
-      case 11:
+      case 10:
         page = ShoppingList(products: <Product>[
           Product(name: "鸡蛋"),
           Product(name: "火腿"),
           Product(name: "方便面")
         ]);
         break;
-      case 12:
+      case 11:
         page = WebSoketPage();
         break;
       default:

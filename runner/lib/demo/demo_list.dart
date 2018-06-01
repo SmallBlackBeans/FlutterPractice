@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'AnimatedListSample.dart';
+import 'AppBarBottomSample.dart';
 
 class DemoListWidget extends StatelessWidget {
-  final List<String> items = [""];
+  final List<String> items = const ["动画列表", "AppBar bottom"];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -27,6 +29,10 @@ class DemoListWidget extends StatelessWidget {
     Widget page;
     switch (index) {
       case 0:
+        page = AnimatedListSample();
+        break;
+      case 1:
+        page = AppBarBottomSample();
         break;
       default:
     }
