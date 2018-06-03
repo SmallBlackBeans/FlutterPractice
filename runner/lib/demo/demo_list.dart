@@ -1,9 +1,22 @@
 import 'package:flutter/material.dart';
 import 'AnimatedListSample.dart';
 import 'AppBarBottomSample.dart';
+import 'BasicAppBarSample.dart';
+import 'ExpansionTileSample.dart';
+import 'AppBarTabbarSample.dart';
+import 'FlutterLayoutSample1.dart';
+import 'PavlovaLayoutSample2.dart';
 
 class DemoListWidget extends StatelessWidget {
-  final List<String> items = const ["动画列表", "AppBar bottom"];
+  final List<String> items = const [
+    "动画列表",
+    "Basic AppBar",
+    "AppBar bottom",
+    "折叠列表",
+    "TabBar选项卡",
+    "布局示例1",
+    "布局示例2"
+  ];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -32,8 +45,24 @@ class DemoListWidget extends StatelessWidget {
         page = AnimatedListSample();
         break;
       case 1:
+        page = BasicAppBarSample();
+        break;
+      case 2:
         page = AppBarBottomSample();
         break;
+      case 3:
+        page = ExpansionTileSample();
+        break;
+      case 4:
+        page = AppBarTabbarSample();
+        break;
+      case 5:
+        page = FlutterLayoutSample1();
+        break;
+      case 6:
+        page = PavlovaLayoutSample();
+        break;
+
       default:
     }
 

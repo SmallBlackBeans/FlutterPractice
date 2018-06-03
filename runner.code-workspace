@@ -14,6 +14,18 @@
 		{
 			"path": "runner/ios/.symlinks/plugins/sqflite",
 			"name": "sqflite"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/path_provider/example",
+			"name": "example"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/shared_preferences/example",
+			"name": "example"
+		},
+		{
+			"path": "runner/ios/.symlinks/plugins/sqflite/example",
+			"name": "example"
 		}
 	],
 	"settings": {}
