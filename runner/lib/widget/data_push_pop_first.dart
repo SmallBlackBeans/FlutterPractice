@@ -29,6 +29,7 @@ class SelectButton extends StatelessWidget {
   }
 
   _navigateAndDisplaySelection(BuildContext context) async {
+    //等待第二个页面的数据 类似于回调 或者 startActivityForResult
     final result =
         await Navigator.push(context, new MaterialPageRoute(builder: (context) {
       return SecondPage();
