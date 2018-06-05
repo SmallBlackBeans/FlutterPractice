@@ -53,7 +53,7 @@ class _MultiThreadDemoState extends State<MultiThreadDemo> {
 
   loadData() async {
     ReceivePort receivePort = new ReceivePort();
-    await Isolate.spawn(dataLoader, receovePort.sendPort);
+    await Isolate.spawn(dataLoader, receivePort.sendPort);
     //SendPort
     SendPort sendPort = await receivePort.first;
     List msg = await sendReceive(
@@ -70,6 +70,7 @@ class _MultiThreadDemoState extends State<MultiThreadDemo> {
     return response.first;
   }
 
+  //它自己的独立执行线程中运行的隔离区
   static dataLoader(SendPort sendPort) async {
     ReceivePort port = new ReceivePort();
     sendPort.send(port.sendPort);

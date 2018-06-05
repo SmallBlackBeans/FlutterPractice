@@ -19,6 +19,7 @@ class AwesomeTips extends StatelessWidget {
       theme: ThemeData(
           brightness: Brightness.dark,
           primaryColor: Colors.yellow.shade800,
+          textSelectionColor: Colors.blueGrey,
           accentColor: Colors.cyan[600]),
       title: Strings.appTitle,
       home: ProjectListWidget(),

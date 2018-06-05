@@ -7,10 +7,10 @@ class SignaturePainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     var paint = new Paint()
-      ..color = Colors.black
+      ..color = Colors.white
       ..strokeCap = StrokeCap.round
       ..strokeWidth = 5.0;
-    for (var i = 0; i < points.length; i++) {
+    for (var i = 0; i < points.length - 1; i++) {
       if (points[i] != null && points[i + 1] != null) {
         canvas.drawLine(points[i], points[i + 1], paint);
       }
@@ -38,31 +38,29 @@ class _SignatureState extends State<Signature> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return new GestureDetector(
-      onPanUpdate:(DragUpdateDetails detail) {
-        setState(() {
-                  RenderBox renderBox = context.findRenderObject();
-                  Offset locationOffset = renderBox.globalToLocal(detail.globalPosition);
-                  _points = new List.from(_points)..add(locationOffset);
-                });
-      } ,
-      onPanEnd: (DragEndDetails detail) => _points..add(null),
-      child: new CustomPaint(
-        painter: new SignaturePainter(_points),
-      )
-    );
+        onPanUpdate: (DragUpdateDetails detail) {
+          setState(() {
+            RenderBox renderBox = context.findRenderObject();
+            Offset locationOffset =
+                renderBox.globalToLocal(detail.globalPosition);
+            _points = new List.from(_points)..add(locationOffset);
+          });
+        },
+        onPanEnd: (DragEndDetails detail) => _points..add(null),
+        child: new CustomPaint(
+          painter: new SignaturePainter(_points),
+        ));
   }
 }
 
-
 class PaintDemo extends StatelessWidget {
   @override
-    Widget build(BuildContext context) {
-      // TODO: implement build
-      return new Scaffold(
-         appBar: AppBar(
-        title: Text('画板'),
-      ),
-        body: new Signature()
-      );
-    }
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return new Scaffold(
+        appBar: AppBar(
+          title: Text('画板'),
+        ),
+        body: new Signature());
+  }
 }

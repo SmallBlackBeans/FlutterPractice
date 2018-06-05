@@ -16,6 +16,7 @@ dependencies:
   http: any
   dio: any
   web_socket_channel: any
+  shared_preferences: any
 
 dev_dependencies:
   flutter_test:
@@ -93,6 +94,12 @@ flutter:
   #       - asset: fonts/TrajanPro.ttf
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+  fonts:
+      - family: Ashby
+        fonts:
+         - asset: fonts/ashby.black-italic.ttf
+         - style: italic
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.io/custom-fonts/#from-packages

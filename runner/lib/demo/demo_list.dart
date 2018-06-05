@@ -12,6 +12,7 @@ import 'CardDemo1.dart';
 import 'FlutterWebDemo.dart';
 import 'FlutterAndroid.dart';
 import 'SignaturePainter.dart';
+import 'multiThread.dart';
 
 class DemoListWidget extends StatelessWidget {
   final List<String> items = const [
@@ -27,7 +28,8 @@ class DemoListWidget extends StatelessWidget {
     "Card 卡片",
     "Flutter到Web",
     "Flutter到安卓",
-    "画板"
+    "画板",
+    "多线程"
   ];
   @override
   Widget build(BuildContext context) {
@@ -91,6 +93,9 @@ class DemoListWidget extends StatelessWidget {
         break;
       case 12:
         page = PaintDemo();
+        break;
+      case 13:
+        page = MultiThreadDemo();
         break;
 
       default:
