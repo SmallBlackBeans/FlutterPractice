@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
-import 'widget/widget_demo.dart';
-import 'demo/demo_list.dart';
+import 'AnimatedBuilderDemo.dart';
+import 'Photo_grid_list.dart';
 
-class ProjectListWidget extends StatelessWidget {
-  final List<String> items = ["widget demo", "示例"];
-
+class DemoAnimationList extends StatelessWidget {
+  final List<String> items = const ["Logo动画", "图片 列表"];
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Scaffold(
-      appBar: AppBar(title: Text("runner")),
+      appBar: AppBar(
+        title: Text("动画"),
+      ),
       body: ListView.builder(
         itemCount: items.length,
-        itemBuilder: (context, position) {
+        itemBuilder: (context, index) {
           return ListTile(
-              title: Text(items[position]),
-              subtitle: null,
+              title: Text(items[index]),
+              subtitle: Text(''),
               onTap: () {
-                _pushPage(context, position);
+                _pushPage(context, index);
               });
         },
       ),
@@ -28,10 +29,10 @@ class ProjectListWidget extends StatelessWidget {
     Widget page;
     switch (index) {
       case 0:
-        page = WidgetDemoPage();
+        page = LogoAppAnimationWidget();
         break;
       case 1:
-        page = DemoListWidget();
+        page = PhotoGridListDemo();
         break;
       default:
     }

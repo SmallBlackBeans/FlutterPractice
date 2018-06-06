@@ -70,25 +70,22 @@ class ChoiceCard extends StatelessWidget {
     final TextStyle textStyle =
         Theme.of(context).textTheme.display1; // TODO: implement build
     return new Card(
-      color: Colors.white,
-      child: new Center(
-        child: new Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            new Icon(
-              choice.icon,
-              size: 128.0,
-              color: textStyle.color,
-            ),
-            new Text(
-              choice.title,
-              style: textStyle,
-            )
-          ]
-        )
-      )
-    );
+        color: Colors.white,
+        child: new Center(
+            child: new Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+              new Icon(
+                choice.icon,
+                size: 128.0,
+                color: textStyle.color,
+              ),
+              new Text(
+                choice.title,
+                style: textStyle,
+              )
+            ])));
   }
 }
 
