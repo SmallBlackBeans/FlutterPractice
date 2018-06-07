@@ -6,7 +6,7 @@ class ScaffoldWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Container(
         height: 56.0,
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
@@ -32,7 +32,7 @@ class ScaffoldWidget extends StatelessWidget {
 class ContainerWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
       appBar: AppBar(title: Text("nihao")),
       body: new Material(

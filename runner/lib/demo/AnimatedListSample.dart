@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AnimatedListSample extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _AnimatedListSampleState();
   }
 }
@@ -17,7 +17,7 @@ class _AnimatedListSampleState extends State<AnimatedListSample> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     _manager = ListManager<int>(
       listKey: _listKey,
@@ -71,7 +71,7 @@ class _AnimatedListSampleState extends State<AnimatedListSample> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return MaterialApp(
       home: new Scaffold(
         appBar: AppBar(

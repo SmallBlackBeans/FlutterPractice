@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BasicAppBarSample extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _BasicAppBarSampleState();
   }
 }
@@ -19,7 +19,7 @@ class _BasicAppBarSampleState extends State<BasicAppBarSample> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new MaterialApp(
         home: new Scaffold(
       appBar: AppBar(
@@ -67,8 +67,7 @@ class ChoiceCard extends StatelessWidget {
   const ChoiceCard({Key key, this.choice}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    final TextStyle textStyle =
-        Theme.of(context).textTheme.display1; // TODO: implement build
+    final TextStyle textStyle = Theme.of(context).textTheme.display1; //
     return new Card(
         color: Colors.white,
         child: new Center(

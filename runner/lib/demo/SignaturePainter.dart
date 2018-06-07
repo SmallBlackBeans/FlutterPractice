@@ -19,7 +19,7 @@ class SignaturePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(SignaturePainter old) {
-    // TODO: implement shouldRepaint
+    //
     return old.points != points;
   }
 }
@@ -27,7 +27,7 @@ class SignaturePainter extends CustomPainter {
 class Signature extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _SignatureState();
   }
 }
@@ -36,7 +36,7 @@ class _SignatureState extends State<Signature> {
   List<Offset> _points = <Offset>[];
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new GestureDetector(
         onPanUpdate: (DragUpdateDetails detail) {
           setState(() {
@@ -56,7 +56,7 @@ class _SignatureState extends State<Signature> {
 class PaintDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
         appBar: AppBar(
           title: Text('画板'),

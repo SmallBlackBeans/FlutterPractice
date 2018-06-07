@@ -108,7 +108,7 @@ class ColorItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Semantics(
       container: true,
       child: new Container(
@@ -156,7 +156,7 @@ class PalleteTabView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     final TextTheme textTheme = Theme.of(context).textTheme;
     final TextStyle whiteTextStyle =
         textTheme.body1.copyWith(color: Colors.white);
@@ -195,7 +195,7 @@ class ColorListDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new DefaultTabController(
       length: allPaletters.length,
       child: new Scaffold(

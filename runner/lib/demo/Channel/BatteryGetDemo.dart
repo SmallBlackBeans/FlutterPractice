@@ -6,7 +6,7 @@ import 'dart:async';
 class BatteryGetWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return BatteryGetWidgetState();
   }
 }
@@ -31,7 +31,7 @@ class BatteryGetWidgetState extends State<BatteryGetWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Material(
       child: new Center(
         child: new Column(

@@ -33,7 +33,7 @@ Future<Post> fetchPost() async {
 class PostPage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _PostPageState();
   }
 }
@@ -42,7 +42,7 @@ class _PostPageState extends State<PostPage> {
   String _title = 'fetch data...';
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
       appBar: AppBar(
         title: Text(_title),

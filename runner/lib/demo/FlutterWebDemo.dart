@@ -63,7 +63,6 @@ class FlutterWebDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
         title: Text("Web demo"),

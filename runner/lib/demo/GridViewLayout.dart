@@ -21,7 +21,7 @@ Widget buildGrid() {
 class GridViewLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
 
     return new Scaffold(
         appBar: AppBar(

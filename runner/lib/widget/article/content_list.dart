@@ -7,7 +7,7 @@ import 'feed.dart';
 class ContentList extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _ContentListState();
   }
 }
@@ -41,7 +41,7 @@ class _ContentListState extends State<ContentList> {
   //合适的时机调用获取数据
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     print("lalalala");
     _loadData();
@@ -59,7 +59,7 @@ class _ContentListState extends State<ContentList> {
   //这个方法在 Widget 被渲染到屏幕上时会调用
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     //Scaffold 类是 Material Design Widgets 的容器。它通常作为 Widget 层级的根
     return Scaffold(
         appBar: AppBar(title: Text(Strings.appTitle)),

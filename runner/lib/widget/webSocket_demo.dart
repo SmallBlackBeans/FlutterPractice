@@ -11,7 +11,7 @@ class WebSoketPage extends StatefulWidget {
   //     : super(key: key);
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _WebSoketPageState();
   }
 }
@@ -20,7 +20,7 @@ class _WebSoketPageState extends State<WebSoketPage> {
   TextEditingController _controller = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
       appBar: AppBar(title: Text(widget.title)),
       body: Padding(
@@ -63,7 +63,7 @@ class _WebSoketPageState extends State<WebSoketPage> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    //
     widget.channel.sink.close();
     super.dispose();
   }

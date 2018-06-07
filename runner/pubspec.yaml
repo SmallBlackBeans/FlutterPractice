@@ -20,10 +20,13 @@ dependencies:
   web_socket_channel: any
   shared_preferences: any
 
+  json_annotation: any
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  
+  build_runner: any
+  json_serializable: any  #自动化的源代码生成器
 
 
 # For information on the generic Dart part of this file, see the

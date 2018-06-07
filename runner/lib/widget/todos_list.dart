@@ -9,7 +9,6 @@ final todos = new List<Todo>.generate(20, (i) {
 class TodoList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
         title: Text("Todos list"),
@@ -22,7 +21,7 @@ class TodoList extends StatelessWidget {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return TodoDetail(
-                  todo: todos[index],
+                  todo: null,
                 );
               }));
             },

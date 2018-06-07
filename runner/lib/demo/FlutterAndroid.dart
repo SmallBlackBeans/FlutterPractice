@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 class FlutterAndroidDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return FadeText();
   }
 }
@@ -44,17 +44,18 @@ class _SampleAppPageState extends State<SampleAppPage> {
 class FadeText extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _FadeTextState();
   }
 }
 
+// ignore: mixin_inherits_from_not_object
 class _FadeTextState extends State<FadeText> with TickerProviderStateMixin {
   AnimationController controller;
   CurvedAnimation curve; //曲线函数
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     controller = AnimationController(
         duration: Duration(milliseconds: 2000), vsync: this);
@@ -63,7 +64,7 @@ class _FadeTextState extends State<FadeText> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
       appBar: AppBar(
         title: Text('安卓通信'),

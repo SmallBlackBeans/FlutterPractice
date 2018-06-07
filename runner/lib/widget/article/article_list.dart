@@ -6,7 +6,7 @@ import 'dart:convert';
 class ArticleList extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _ArticleState();
   }
 }
@@ -32,14 +32,14 @@ class _ArticleState extends State<ArticleList> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     _reqData();
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
         appBar: AppBar(title: Text("hanxiaocu")),
         body: new ListView.builder(

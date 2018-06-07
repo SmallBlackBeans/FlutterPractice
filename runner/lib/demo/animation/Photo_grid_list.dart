@@ -56,6 +56,7 @@ class _GridTitleText extends StatelessWidget {
 }
 
 class _GridPhotoViewerState extends State<GridPhotoViewer>
+    // ignore: mixin_inherits_from_not_object
     with SingleTickerProviderStateMixin {
   AnimationController _controller;
   Animation<Offset> _flingAnimation;

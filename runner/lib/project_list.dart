@@ -7,7 +7,7 @@ class ProjectListWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
       appBar: AppBar(title: Text("runner")),
       body: ListView.builder(

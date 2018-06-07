@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppBarTabbarSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new MaterialApp(
         home: DefaultTabController(
             length: choices.length,
@@ -37,7 +37,7 @@ class ChoiceCard extends StatelessWidget {
   ChoiceCard({this.choice});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     final TextStyle textStyle = Theme.of(context).textTheme.display1;
     return new Card(
         color: Colors.white,

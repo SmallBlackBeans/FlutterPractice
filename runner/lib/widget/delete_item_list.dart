@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class DeleteItemList extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _DeleteItemState();
   }
 }
@@ -15,7 +15,7 @@ class _DeleteItemState extends State<DeleteItemList> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
       appBar: AppBar(
         title: Text("可删除列表"),

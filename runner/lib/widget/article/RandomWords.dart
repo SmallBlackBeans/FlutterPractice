@@ -50,7 +50,7 @@ class RandomWordsState extends State<RandomWords> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     final wordPair = new WordPair.random();
     return Scaffold(
         appBar: AppBar(

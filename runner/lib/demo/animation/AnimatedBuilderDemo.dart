@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class LogoWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Container(
       //垂直对称 上下外间距10
       margin: new EdgeInsets.symmetric(vertical: 10.0),
@@ -15,7 +15,7 @@ class LogoWidget extends StatelessWidget {
 class LogoAppAnimationWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _LogoAppAnimationState();
   }
 }
@@ -23,13 +23,13 @@ class LogoAppAnimationWidget extends StatefulWidget {
 //SingleTickerProviderStateMixin添加到类定义中，可以将stateful对象作为vsync的值
 //vsync 防止屏幕外动画
 class _LogoAppAnimationState extends State<LogoAppAnimationWidget>
-    with TickerProviderStateMixin {
+    with TickerProviderStateMixin { // ignore: mixin_inherits_from_not_object
   AnimationController controller;
   Animation animation;
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     controller = AnimationController(
         duration: const Duration(milliseconds: 2000), vsync: this);
@@ -54,7 +54,7 @@ class _LogoAppAnimationState extends State<LogoAppAnimationWidget>
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return
         /* 
      GrowTransition(
@@ -69,7 +69,7 @@ class _LogoAppAnimationState extends State<LogoAppAnimationWidget>
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    //
     controller.dispose();
     super.dispose();
   }
@@ -81,7 +81,7 @@ class GrowTransition extends StatelessWidget {
   GrowTransition({this.child, this.animation});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Center(
       child: new AnimatedBuilder(
           child: child,

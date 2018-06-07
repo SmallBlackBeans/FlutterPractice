@@ -6,7 +6,6 @@ class DemoAnimationList extends StatelessWidget {
   final List<String> items = const ["Logo动画", "图片 列表"];
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
         title: Text("动画"),

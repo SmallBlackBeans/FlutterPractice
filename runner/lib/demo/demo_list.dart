@@ -14,6 +14,8 @@ import 'FlutterAndroid.dart';
 import 'SignaturePainter.dart';
 import 'multiThread.dart';
 import 'animation/demo_animation_list.dart';
+import 'HttpJsonDemo.dart';
+import 'FileRWDemo.dart';
 
 class DemoListWidget extends StatelessWidget {
   final List<String> items = const [
@@ -31,11 +33,12 @@ class DemoListWidget extends StatelessWidget {
     "Flutter到安卓",
     "画板",
     "多线程",
-    "动画"
+    "动画",
+    "文件读写",
+    "https-json 请求"
   ];
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
         title: Text("示例"),
@@ -101,6 +104,12 @@ class DemoListWidget extends StatelessWidget {
         break;
       case 14:
         page = DemoAnimationList();
+        break;
+      case 15:
+        page = FileRWDemo();
+        break;
+      case 16:
+        page = HttpJsonDemo();
         break;
 
       default:

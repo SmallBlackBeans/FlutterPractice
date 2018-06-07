@@ -4,7 +4,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 class PavlovaLayoutSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
 
     var titleText = new Container(
       padding: const EdgeInsets.all(20.0),

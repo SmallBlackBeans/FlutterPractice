@@ -11,7 +11,6 @@ class MultiThreadDemo extends StatefulWidget {
   MultiThreadDemo({Key key}) : super(key: key);
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _MultiThreadDemoState();
   }
 }
@@ -22,7 +21,7 @@ class _MultiThreadDemoState extends State<MultiThreadDemo> {
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     loadData();
   }
@@ -85,7 +84,6 @@ class _MultiThreadDemoState extends State<MultiThreadDemo> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Scaffold(
       appBar: AppBar(
         title: Text("多线程"),

@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class ExpansionTileSample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new MaterialApp(
       home: new Scaffold(
         appBar: AppBar(
@@ -39,7 +38,7 @@ class ExpansionItemWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return _buildItem(item);
   }
 }

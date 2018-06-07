@@ -4,7 +4,7 @@ import 'data_push_pop_second.dart';
 class FirstPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
       appBar: AppBar(
         title: Text('第一个页面'),
@@ -19,7 +19,7 @@ class FirstPage extends StatelessWidget {
 class SelectButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new RaisedButton(
       onPressed: () {
         _navigateAndDisplaySelection(context);

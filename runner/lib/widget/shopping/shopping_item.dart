@@ -26,7 +26,7 @@ class ShoppingListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return ListTile(
       onTap: () {
         onCartChanged(product, !inCart);

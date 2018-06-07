@@ -7,7 +7,7 @@ class TodoDetail extends StatelessWidget {
   TodoDetail({Key key, @required this.todo}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Scaffold(
       appBar: AppBar(
         title: Text('${todo.title}'),

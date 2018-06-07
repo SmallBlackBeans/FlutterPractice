@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 class FavoriteWidget extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _FavoriteWidgetState();
   }
 }
@@ -25,7 +24,6 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return new Row(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
@@ -51,7 +49,6 @@ class _FavoriteWidgetState extends State<FavoriteWidget> {
 class FlutterLayoutSample1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     Widget titleSection = _buildTitleSection(context);
     Widget buttonSection = _buildButtonSection(context);
     Widget textSection = _buildTextSection(context, null);

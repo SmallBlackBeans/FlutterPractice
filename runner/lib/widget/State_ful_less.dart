@@ -11,7 +11,6 @@ class CounterDisplay extends StatelessWidget {
   CounterDisplay({this.count});
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Text('count:$count');
   }
 }
@@ -23,7 +22,7 @@ class CounterIncrement extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new RaisedButton(
       onPressed: this.onPressed,
       child: new Text("Increment"),
@@ -34,7 +33,7 @@ class CounterIncrement extends StatelessWidget {
 class Counter extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _CounterState();
   }
 }
@@ -50,7 +49,7 @@ class _CounterState extends State<Counter> {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return new Row(
       children: <Widget>[
         new CounterDisplay(

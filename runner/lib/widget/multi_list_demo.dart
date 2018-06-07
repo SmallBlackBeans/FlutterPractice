@@ -21,7 +21,7 @@ class ListMulti extends StatelessWidget {
           : MessageItem(sender: 'sender$i', body: 'body $i'));
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
       appBar: AppBar(title: Text("多条目列表")),
       body: ListView.builder(

@@ -28,26 +28,26 @@ class _ShoppingListState extends State<ShoppingList> {
 
   @override
   void didUpdateWidget(ShoppingList oldWidget) {
-    // TODO: implement didUpdateWidget
+    //
     super.didUpdateWidget(oldWidget);
     //在重建list时接收到通知
   }
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    //
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     return Scaffold(
       appBar: AppBar(
         title: Text("购物列表"),

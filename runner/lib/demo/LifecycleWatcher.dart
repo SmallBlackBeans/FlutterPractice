@@ -9,7 +9,7 @@ suspending - 该应用程序将暂时中止。这在iOS上未使用
 class LifecycleWatcher extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
+    //
     return _LifecycleWatcherState();
   }
 }
@@ -20,21 +20,21 @@ class _LifecycleWatcherState extends State<LifecycleWatcher>
 
   @override
   void initState() {
-    // TODO: implement initState
+    //
     super.initState();
     WidgetsBinding.instance.addObserver(this);
   }
 
   @override
   void dispose() {
-    // TODO: implement dispose
+    //
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // TODO: implement didChangeAppLifecycleState
+    //
     //super.didChangeAppLifecycleState(state);
     setState(() {
       _lastLifeCycleState = state;
@@ -43,7 +43,7 @@ class _LifecycleWatcherState extends State<LifecycleWatcher>
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    //
     if (_lastLifeCycleState == null) {
       return new Text('还没有添加观察者');
     }
