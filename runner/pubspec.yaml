@@ -17,13 +17,25 @@ dependencies:
   transparent_image: ^0.1.0
   http: any
   dio: any
+  
   web_socket_channel: any
   shared_preferences: any
 
+  #json 注解
   json_annotation: any
+  #router 
+  fluro: "^1.3.1"
+
+  css_colors: any
+
+  url_launcher: any
+
 
 dev_dependencies:
   flutter_test:
+    sdk: flutter
+    #集成测试
+  flutter_driver:
     sdk: flutter
   build_runner: any
   json_serializable: any  #自动化的源代码生成器

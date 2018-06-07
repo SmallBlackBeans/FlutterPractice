@@ -10,14 +10,15 @@ class User extends Object with _$UserSerializerMixin {
   String email;
   //自定义命名策略
   @JsonKey(name: 'id')
-  int user_id;
+  int userId;
   factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 }
 
 test() {
   //使用
   //反序列化
-  String jsonMap = "{'name': 'hanxiaocu', 'email': '123@gmail.com'}";
+  String jsonMap =
+      "{'name': 'hanxiaocu', 'email': '123@gmail.com','userId':123}";
   Map userMap = json.decode(jsonMap);
   var user = new User.fromJson(userMap);
   //序列化
