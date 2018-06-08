@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class TextEditingControllerDemo extends StatefulWidget {
   TextEditingControllerDemo({Key key}) : super(key: key);
+
   @override
   State<StatefulWidget> createState() {
-    //
     return _TextEditingControllerDemoState();
   }
 }

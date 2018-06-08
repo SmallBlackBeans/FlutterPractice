@@ -6,7 +6,6 @@ import android.content.IntentFilter;
 import android.os.BatteryManager;
 import android.os.Build;
 import android.os.Bundle;
-
 import io.flutter.app.FlutterActivity;
 import io.flutter.plugin.common.MethodCall;
 import io.flutter.plugin.common.MethodChannel;
@@ -16,13 +15,13 @@ public class MainActivity extends FlutterActivity {
 
     private static final String CHANNEL = "demo.hanxiaocu/battery";
 
+
     String shareText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         GeneratedPluginRegistrant.registerWith(this);
-
 
         Intent intent = getIntent();
         String action = intent.getAction();
@@ -55,7 +54,7 @@ public class MainActivity extends FlutterActivity {
                     } else {
                         result.error("不可用", "电量获取不到", null);
                     }
-                }else  {
+                } else {
                     result.notImplemented();
                 }
             }
