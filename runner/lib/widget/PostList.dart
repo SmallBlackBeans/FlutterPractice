@@ -25,7 +25,7 @@ class Post {
 Future<Post> fetchPost() async {
   final response = await http.get(
       'https://jsonplaceholder.typicode.com/posts/3',
-      headers: {HttpHeaders.AUTHORIZATION: "token"});
+      headers: {HttpHeaders.authorizationHeader: "token"});
   final jsonRes = json.decode(response.body);
   return Post.fromJson(jsonRes);
 }

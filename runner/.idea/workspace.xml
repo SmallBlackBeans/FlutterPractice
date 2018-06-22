@@ -24,26 +24,17 @@
       <file leaf-file-name="TextEditingController.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/demo/TextEditingController.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state>
               <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project_list.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="project_list.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/project_list.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3320">
+            <state relative-caret-position="633">
               <caret line="168" selection-start-line="168" selection-end-line="168" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.dart" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/main.dart">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -51,7 +42,7 @@
       <file leaf-file-name="AnimatedBuilderDemo.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/demo/animation/AnimatedBuilderDemo.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
+            <state>
               <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
@@ -101,6 +92,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -130,8 +123,6 @@
         <option name="show-excluded-files" value="false" />
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -144,7 +135,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.chrisrm.idea.config" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RunDashboard">
@@ -247,11 +238,12 @@
       <workItem from="1528682052054" duration="7758000" />
       <workItem from="1528699713981" duration="4481000" />
       <workItem from="1528707624304" duration="1269000" />
+      <workItem from="1529479443270" duration="289000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36598000" />
+    <option name="totallyTimeSpent" value="36887000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -640,15 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/demo/TextEditingController.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state>
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/project_list.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3320">
-          <caret line="168" selection-start-line="168" selection-end-line="168" />
         </state>
       </provider>
     </entry>
@@ -661,15 +646,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/demo/animation/AnimatedBuilderDemo.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
+        <state>
           <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/main.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="601">
-          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
+        <state relative-caret-position="216">
+          <caret line="16" column="36" lean-forward="true" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/project_list.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="168" selection-start-line="168" selection-end-line="168" />
         </state>
       </provider>
     </entry>

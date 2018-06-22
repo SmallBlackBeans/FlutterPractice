@@ -21,7 +21,7 @@ class TodoList extends StatelessWidget {
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) {
                 return TodoDetail(
-                  todo: null,
+                  todo: todos[index],
                 );
               }));
             },

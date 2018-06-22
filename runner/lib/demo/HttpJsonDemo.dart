@@ -24,7 +24,7 @@ class _HttpJsonDemoState extends State<HttpJsonDemo> {
     try {
       var request = await httpClient.getUrl(Uri.parse(url));
       var response = await request.close();
-      if (response.statusCode == HttpStatus.OK) {
+      if (response.statusCode == HttpStatus.ok) {
         var jsonStr = await response.transform(utf8.decoder).join();
         var data = json.decode(jsonStr);
         result = data['origin'];
